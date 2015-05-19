@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/location_setting">
+    </PreferenceCategory>
+        <EditTextPreference
+            android:title="@string/pref_location_label"
+            android:key="@string/pref_location_key"
+            android:defaultValue="@string/pref_location_default"
+            android:inputType="text"
+            android:singleLine="true" />
+
+    <PreferenceCategory
+        android:title="@string/system_of_units">
+    </PreferenceCategory>
+        <ListPreference
+            android:title="@string/pref_units_label"
+            android:key="@string/pref_units_key"
+            android:defaultValue="@string/pref_unit_default"
+            android:dialogTitle="@string/pref_unit_dialog_title"
+            android:entries="@array/pref_units_values"
+            android:entryValues="@array/pref_units_options" />
+
+
+</PreferenceScreen>
